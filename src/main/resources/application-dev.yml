@@ -1,0 +1,10 @@
+server:
+  port: 8088
+#logging:
+#  level:
+#    com: trace
+#  file:
+#    path: springboot.log
+#  pattern:
+#    console: %d{yyyy-MM-dd} [%thread] %-5level %logger{50} - %msg%n
+#    name: F://springbootSimk.log

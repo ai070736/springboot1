@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    cache: false
+  datasource:
+#    url: jdbc:mysql://localhost:3306/bill?serverTimezone=GMT%2B8&characterEncoding=UTF-8
+    url: jdbc:mysql://rm-bp1ned5wn038w35jd5o.mysql.rds.aliyuncs.com:3306/bill?serverTimezone=GMT%2B8&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    password: 123456
+    password: Qzy070736
+    username: root
+  mvc:
+    format:
+      date: yyyy-MM-dd HH:mm:ss
+server:
+  port: 8000
+logging:
+  level:
+    com.simk.mapper: debug
+#  pattern:
+#    console: "%d{yyyy--MM-dd HH:mm:ss} [%thread] %-5level %logger{50} - %msg%n"
+mybatis:
+  #config-location and configuration dont together
+  #  configuration:
+  #    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
