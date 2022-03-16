@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 //测试commit1
+//在hotfix分支修改
 @EnableCaching
 @SpringBootApplication
 public class springMain {
