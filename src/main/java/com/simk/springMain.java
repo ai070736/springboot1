@@ -7,6 +7,8 @@ import org.springframework.cache.annotation.EnableCaching;
 //在hotfix分支修改
 
 //master冲突测试
+
+//hotfix 冲突测试
 @EnableCaching
 @SpringBootApplication
 public class springMain {
